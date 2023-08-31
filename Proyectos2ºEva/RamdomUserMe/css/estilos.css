@@ -1,0 +1,177 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    img {
+        width: 50%;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 0 0.5rem;
+        animation: bounce;
+        animation-duration: 3s;
+    }
+    
+    .btn {
+        text-align: center;
+        text-transform: uppercase;
+        -webkit-box-shadow: 2px 2px dimgray;
+        box-shadow: 2px 2px rgb(223, 143, 209);
+        background-color: #842c8f;
+        border-radius: 10px;
+        padding: 6px 6px;
+        margin-top: 10px;
+        font-family: fantasy;
+        color: black;
+    }
+    
+    .btn:hover {
+        background-color: white;
+    }
+    
+    .SectionClass {
+        width: 80%;
+        margin: 10px auto;
+    }
+    
+    h3 {
+        text-align: center;
+        text-transform: uppercase;
+        font-family: fantasy;
+        padding: 50px;
+        margin: 50px;
+        color: white;
+        font-size: xx-large;
+    }
+    
+    body {
+        background-color: black;
+    }
+    
+    .btnMostrar {
+        padding: 10px 5px;
+        color: white;
+        display: inline-block;
+        background-color: rgb(1, 1, 22);
+        border-radius: 10px;
+        font-size: xx-large;
+    }
+    
+    .btnBorrar {
+        padding: 10px 5px;
+        color: white;
+        display: inline-block;
+        background-color: rgb(149, 59, 172);
+        border-radius: 10px;
+        font-size: xx-large;
+    }
+    
+    div {
+        text-align: center;
+        padding: 10px 5px;
+        color: white;
+        background-color: pink;
+        border-radius: 10px;
+        font-size: xx-large;
+    }
+    
+    .col-12 {
+        width: 100%;
+        padding: 2%;
+    }
+    
+    .div1 {
+        background-color: red;
+    }
+    
+    .div2 {
+        background-color: orange;
+    }
+    
+    .div3 {
+        background-color: yellow;
+        color: black;
+    }
+    
+    .div4 {
+        background-color: green;
+    }
+    
+    .div5 {
+        background-color: rgba(66, 68, 233, 0.822);
+    }
+    
+    .div6 {
+        background-color: blue;
+    }
+    
+    .div7 {
+        background-color: violet;
+    }
+    /*.col-1 {
+        width: 8.33%;
+    }
+    
+    .col-2 {
+        width: 16.66%;
+    }
+    
+    .col-3 {
+        width: 25%;
+    }
+    
+    .col-4 {
+        width: 33.33%;
+    }
+    
+    .col-5 {
+        width: 41.66%;
+    }
+    
+    .col-6 {
+        width: 50%;
+    }
+    
+    .col-7 {
+        width: 58.33%;
+    }
+    
+    .col-8 {
+        width: 66.66%;
+    }
+    
+    .col-9 {
+        width: 75%;
+    }
+    
+    .col-10 {
+        width: 83.33%;
+    }
+    
+    .col-11 {
+        width: 91.66%;
+    }*/
+    
+    .col-12 {
+        width: 33.33%;
+        padding: 2%;
+    }
+    
+    @media(min-width:576px) {
+        .col-12 {
+            width: 33.33%;
+        }
+    }
+    
+    @media(min-width: 768px) {
+        .col-12 {
+            width: 66.66%;
+        }
+        @media(min-width: 992px) {
+            .col-12 {
+                width: 66. 66%;
+            }
+        }
+        @media(min-width: 1200px) {}
+    }

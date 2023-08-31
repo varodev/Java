@@ -1,0 +1,2417 @@
+{\rtf1\ansi\deff3\adeflang1025
+{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\froman\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}{\f4\froman\fprq2\fcharset0 Liberation Sans{\*\falt Arial};}{\f5\froman\fprq2\fcharset0 Calibri;}{\f6\froman\fprq2\fcharset0 Consolas;}{\f7\fnil\fprq2\fcharset0 0;}{\f8\fnil\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}{\f9\fnil\fprq2\fcharset0 Calibri;}{\f10\fnil\fprq2\fcharset0 Consolas;}}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red127\green0\blue85;\red0\green0\blue192;\red63\green127\blue95;\red106\green62\blue62;\red42\green0\blue255;}
+{\stylesheet{\s0\snext0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1 Normal;}
+{\s15\sbasedon0\snext16\dbch\af8\langfe1081\dbch\af8\afs28\ql\nowidctlpar\hyphpar0\sb240\sa120\keepn\ltrpar\cf0\loch\f4\fs28\lang3082\kerning1 T\u237\'edtulo;}
+{\s16\sbasedon0\snext16\dbch\af8\langfe1081\dbch\af8\afs24\sl276\slmult1\ql\nowidctlpar\hyphpar0\sb0\sa140\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1 Cuerpo de texto;}
+{\s17\sbasedon16\snext17\dbch\af8\langfe1081\dbch\af8\afs24\sl276\slmult1\ql\nowidctlpar\hyphpar0\sb0\sa140\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1 Lista;}
+{\s18\sbasedon0\snext18\dbch\af8\langfe1081\dbch\af8\afs24\ai\ql\nowidctlpar\hyphpar0\sb120\sa120\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1 Leyenda;}
+{\s19\sbasedon0\snext19\dbch\af8\langfe1081\dbch\af8\afs24\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1 \u205\'cdndice;}
+}{\*\generator LibreOffice/7.0.4.2$Windows_X86_64 LibreOffice_project/dcf040e67528d9187c66b2379df5ea4407429775}{\info{\creatim\yr0\mo0\dy0\hr0\min0}{\revtim\yr2021\mo3\dy19\hr16\min21}{\printim\yr0\mo0\dy0\hr0\min0}}{\*\userprops}\deftab720
+\hyphauto1\viewscale90
+{\*\pgdsctbl
+{\pgdsc0\pgdscuse451\pgwsxn11906\pghsxn16838\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\pgdscnxt0 Estilo de p\u225\'e1gina predeterminado;}}
+\formshade{\*\pgdscno0}\paperh16838\paperw11906\margl1134\margr1134\margt1134\margb1134\sectd\sbknone\pgndec\sftnnar\saftnnrlc\sectunlocked1\pgwsxn11906\pghsxn16838\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\ftnbj\ftnstart1\ftnrstcont\ftnnar\aenddoc\aftnrstcont\aftnstart1\aftnnrlc
+{\*\ftnsep\chftnsep}\pgndec\pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1{\loch
+11. }{\rtlch\dbch\af9\dbch\af9\hich\af5 \ltrch\cf1\loch\f5\loch
+Desarrollar un  programa que lea las calificaciones de un alumno en 10 asignaturas, las almacena en una tabla(vector) y calcula y visualiza su media.}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+package}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ vectores;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+import}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ java.util.*;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+class}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ ejeArray11 \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0\rtlch\dbch\af10\hich\af6 \ltrch\fs20\loch\f6\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab Scanner }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+scanner}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+arrayNotas}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[];}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+double}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+media}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+suma}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ ejeArray11() \{}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//constructor}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+scanner}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ = }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+new}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ Scanner(System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+in}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+);}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \}}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+void}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ vect () \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+arrayNotas}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=}{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+new}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[10];}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+for}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=0;}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+<10;}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+++) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+out}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.println(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf21\fs20\loch\f6\loch
+"dime la "}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ + (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
++1) + }{\rtlch\dbch\af10\hich\af6 \ltrch\cf21\fs20\loch\f6\loch
+" nota"}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+);}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+arrayNotas}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+]=}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+scanner}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.nextInt();\tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+suma}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ = }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+suma}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ + }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+arrayNotas}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+];}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \}}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\ul\ulc0\loch\f6\loch
+vect}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+void}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ imprimir() \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+for}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=0;}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+<10;}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+++) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+media}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ = }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+suma}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+/10;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \}}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+out}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.println(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+media}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+);}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\ul\ulc0\loch\f6\loch
+imprimir}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+static}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+void}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ main(String[] }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+args}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6
+        }{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ejeArray11 }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+alumno}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+= }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+new}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ ejeArray11();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+alumno}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.vect();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+alumno}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.imprimir();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//main}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//ejeArray11}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1{\loch
+12. }{\rtlch\dbch\af7 \ltrch\cf1\loch
+Desarrollar un programa que permita ingresar un vector de n elementos, ingresar n por teclado. Luego imprimir la suma de los n\u250\'fameros impares y la multiplicaci\u243\'f3n de los n\u250\'fameros pares.}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+package}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ vectores;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+import}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ java.util.*;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+class}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ ejeArray12 \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0\rtlch\dbch\af10\hich\af6 \ltrch\fs20\loch\f6\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab Scanner }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+scanner}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ = }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+new}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ Scanner(System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+in}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+);}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+n}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+suma}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=0;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+double}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+multi}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=1;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+array}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[];}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+void}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ cargar () \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+out}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.println(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf21\fs20\loch\f6\loch
+"ingresa los elementos del vector"}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+);}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+n}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ = }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+scanner}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.nextInt();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+array}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ = }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+new}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ [}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+n}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+];}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+for}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=0;}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+<}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+n}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+++) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+out}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.println(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf21\fs20\loch\f6\loch
+"introduce "}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ + (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
++1) + }{\rtlch\dbch\af10\hich\af6 \ltrch\cf21\fs20\loch\f6\loch
+" numero"}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+);}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+array}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+] = }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+scanner}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.nextInt();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//for}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\ul\ulc0\loch\f6\loch
+cargar}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+void}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ imprimir () \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+for}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=0;}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+<}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+array}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+length}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+++) \{ }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+if}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+array}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+]%2==0) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+multi}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+multi}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+*}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+array}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+];}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+else}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+suma}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+suma}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
++}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+array}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+];}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \}}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \}}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+out}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.println(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf21\fs20\loch\f6\loch
+"La suma es "}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ + }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+suma}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+);}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+out}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.println(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf21\fs20\loch\f6\loch
+"La multiplicacion es "}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ + }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+multi}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+);}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \}}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+static}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+void}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ main(String[] }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+args}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6
+        }{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ejeArray12 }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+num1}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+= }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+new}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ ejeArray12();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+num1}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.cargar();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+num1}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.imprimir();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//main}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//ejeArray10}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1{\loch
+13. }{\rtlch\dbch\af7 \ltrch\cf1\loch
+Desarrollar un programa que permita cargar 5 nombres de personas y sus edades respectivas.  Se utilizar\u225\'e1n dos arrays uno para los nombres y otro para las edades. Despu\u233\'e9s de realizar la carga por teclado de todos los datos imprimir los nombres de las personas mayores de edad.}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+package}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ vectores;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+import}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ java.util.*;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+class}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ ejeArray13 \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0\rtlch\dbch\af10\hich\af6 \ltrch\fs20\loch\f6\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab Scanner }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+scanner}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab String }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+nombres}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[];}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+edades}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[];}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+void}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ Met() \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+scanner}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=}{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+new}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ Scanner(System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+in}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+);}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+nombres}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ = }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+new}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ String[5];\tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+edades}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ = }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+new}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[5];\tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab       }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+for}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=0; }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+<}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+nombres}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+length}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+++) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \tab System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+out}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.println(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf21\fs20\loch\f6\loch
+"Escribe nombre "}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ + (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
++1));}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+nombres}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+]=}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+scanner}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.next();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \tab System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+out}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.println(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf21\fs20\loch\f6\loch
+"Escribe edad "}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ + (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
++1));}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+edades}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+]=}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+scanner}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.nextInt();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \}}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//Met}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+void}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ Mayoria() \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+for}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=0; }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+<5;}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+++) \{\tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+if}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+edades}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+]>=18) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \tab System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+out}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.print(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+nombres}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+] + }{\rtlch\dbch\af10\hich\af6 \ltrch\cf21\fs20\loch\f6\loch
+" ,"}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+);\tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \}}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//for}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\ul\ulc0\loch\f6\loch
+mayoria}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6
+    }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+static}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+void}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ main(String[] }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+args}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab     ejeArray13 }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+num}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+= }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+new}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ ejeArray13();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+num}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.Met();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+num}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.Mayoria();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6
+    }{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//main}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//ejeArray13}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1{\loch
+14. }{\rtlch\dbch\af9\dbch\af9\hich\af5 \ltrch\cf1\loch\f5\loch
+Escribir un programa que lea 5 n\u250\'fameros y los guarde en un array unidimensional, luego pida un nuevo n\u250\'famero e indique si este se encuentra dentro del array y si est\u225\'e1 di en que posici\u243\'f3n.}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+package}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ vectores;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+import}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ java.util.*;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+class}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ ejeArray14 \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0\rtlch\dbch\af10\hich\af6 \ltrch\fs20\loch\f6\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab Scanner }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+scanner}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+numb}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[];}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+void}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ Guardar() \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+scanner}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=}{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+new}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ Scanner(System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+in}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+);}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+numb}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ = }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+new}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[5];\tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab     }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+for}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=0; }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+<}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+numb}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+length}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+++) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \tab System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+out}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.println(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf21\fs20\loch\f6\loch
+"Escribe n\u250\'famero "}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ + (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
++1));}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+numb}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+]=}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+scanner}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.nextInt();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \}}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\ul\ulc0\loch\f6\loch
+Guardar}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+void}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ verPosicion() \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+out}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.println(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf21\fs20\loch\f6\loch
+"introduce nuevo numero a comprar en el vector"}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+);}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+numero}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ = }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+scanner}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.nextInt();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+for}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=0; }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+<}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+numb}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+length}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+++) \{\tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+if}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+numero}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+==}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+numb}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+]) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+out}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.println(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf21\fs20\loch\f6\loch
+"Esta en el vector, posicion "}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ + }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+);\tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \tab \}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+else}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+out}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.println(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf21\fs20\loch\f6\loch
+"No esta en el vector"}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+);}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \tab \}}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6
+                }{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//for}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//verPosicion}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6
+    }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+static}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+void}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ main(String[] }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+args}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6
+      }{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ejeArray14 }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+eje}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+= }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+new}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ ejeArray14();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+eje}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.Guardar();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+eje}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.verPosicion();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//main}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//ejeArray14}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1{\loch
+15. }{\rtlch\dbch\af7 \ltrch\cf1\loch
+Elabore un programa que lea 2 arrays de n elementos cada uno e intercambie sus elementos, la salida debe ser los arrays antes y despu\u233\'e9s del intercambio. No utilizar un tercer arrays.}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+package}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ vectores;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+import}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ java.util.*;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+class}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ ejeArray15 \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0\rtlch\dbch\af10\hich\af6 \ltrch\fs20\loch\f6\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab Scanner }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+scanner}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+array1}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[];}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+array2}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[];}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+n}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+comodin}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+void}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ Guardar() \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+scanner}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=}{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+new}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ Scanner(System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+in}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+);}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+out}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.println(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf21\fs20\loch\f6\loch
+"introduce los n elementos"}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+);}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+n}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ = }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+scanner}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.nextInt();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+array1}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ = }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+new}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+n}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+];\tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+array2}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ = }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+new}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+n}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+];}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+for}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=0; }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+<}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+n}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+++) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+out}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.println(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf21\fs20\loch\f6\loch
+"Escribe n\u250\'famero del primer vector "}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ + (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
++1));}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+array1}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+]=}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+scanner}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.nextInt();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+out}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.println(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf21\fs20\loch\f6\loch
+"Escribe n\u250\'famero del segundo vector "}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ + (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
++1));}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+array2}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+]=}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+scanner}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.nextInt();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6
+                }{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\}}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\ul\ulc0\loch\f6\loch
+Guardar}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+void}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ comodin() \{\tab \tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+for}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=0; }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+<}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+array1}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+length}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+++) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+comodin}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+array1}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+];}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+array1}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+]=}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+array2}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+];}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+array2}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+]=}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+comodin}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \}}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\ul\ulc0\loch\f6\loch
+comodin}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+void}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ imprimir() \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+for}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=0; }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+<}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+array1}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+length}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+++) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+out}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.print(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+array1}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+] + }{\rtlch\dbch\af10\hich\af6 \ltrch\cf21\fs20\loch\f6\loch
+"\\t"}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+);}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \}}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+out}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.println(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf21\fs20\loch\f6\loch
+" "}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+);}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+for}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=0; }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+<}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+array2}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+length}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+++) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+out}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.print(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+array2}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+] + }{\rtlch\dbch\af10\hich\af6 \ltrch\cf21\fs20\loch\f6\loch
+"\\t"}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+);}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \}}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+out}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.println(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf21\fs20\loch\f6\loch
+" "}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+);}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\ul\ulc0\loch\f6\loch
+imprimir}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+static}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+void}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ main(String[] }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+args}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab  ejeArray15 }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+eje}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+= }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+new}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ ejeArray15();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+eje}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.Guardar();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+eje}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.imprimir();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+eje}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.comodin();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+out}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.println(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf21\fs20\loch\f6\loch
+"Dar la vuelta"}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+);}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+eje}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.imprimir();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//main}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//ejeArray15}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1{\loch
+16. }{\rtlch\dbch\af7 \ltrch\cf1\loch
+Dise\u241\'f1ar un programa que permita almacenar los datos de las notas de los 10 alumnos de una asignatura. El programa recoger\u225\'e1 los nombres de los alumnos (nombre, apellido 1 y apellido 2) as\u237\'ed como su nota, mostrando finalmente la nota mayor alcanzada as\u237\'ed como la nota menor, mostrando los nombres de los alumnos que las poseen. En caso de empate, es decir, que varios alumnos posean a la vez la nota m\u225\'e1xima o m\u237\'ednima, se mostrar\u225\'e1n los nombres de los alumnos empatados. Utilizar un array para los nombres y otro para las notas}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+package}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ vectores;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+import}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ java.util.*;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+class}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ ejeArray16_1 \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0\rtlch\dbch\af10\hich\af6 \ltrch\fs20\loch\f6\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab Scanner }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+scanner}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab String }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+datosAlumnos}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[];}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+notas}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[];}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+notaMayor}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=0;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+counterMayor}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+notaMenor}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=10;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+counterMenor}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \tab \tab \tab \tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+void}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ Guardar() \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+scanner}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=}{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+new}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ Scanner(System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+in}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+);}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab  }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+datosAlumnos}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ = }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+new}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ String[10];\tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab  }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+notas}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ = }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+new}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[10];}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+for}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=0; }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+<10;}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+++) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+out}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.println(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf21\fs20\loch\f6\loch
+"Introduce el nombre del alumno "}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ + (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
++1));}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+datosAlumnos}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+]=}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+scanner}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.nextLine();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+out}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.println(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf21\fs20\loch\f6\loch
+"Introduce la nota del alumno "}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ + (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
++1));}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+notas}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+]=}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+scanner}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.nextInt();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab             \}}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+for}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=0; }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+<}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+notas}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+length}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+++) \{}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\ul\ulc0\loch\f6\loch
+con}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\ul\ulc0\loch\f6\loch
+empate}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+if}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+notaMayor}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+<}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+notas}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+]) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+notaMayor}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+notas}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+];}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//counterMayor=i;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \tab \}}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+if}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+notaMenor}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+>}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+notas}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+]) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+notaMenor}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+notas}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+];}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//counterMenor=i;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \tab \}}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \}}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\ul\ulc0\loch\f6\loch
+guardar}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+void}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ empate() \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+for}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=0; }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+<}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+notas}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+length}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+++) \{}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\ul\ulc0\loch\f6\loch
+empate}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\ul\ulc0\loch\f6\loch
+en}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\ul\ulc0\loch\f6\loch
+la}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+ mayor }{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\ul\ulc0\loch\f6\loch
+nota}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+if}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+notaMayor}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+==}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+notas}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+]) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+out}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.println( }{\rtlch\dbch\af10\hich\af6 \ltrch\cf21\fs20\loch\f6\loch
+"la mayor nota es de "}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ + }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+datosAlumnos}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+] + }{\rtlch\dbch\af10\hich\af6 \ltrch\cf21\fs20\loch\f6\loch
+"con un "}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ + }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+notaMayor}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+);}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \}}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \}}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+for}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=0;}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+<}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+notas}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+length}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+++) \{}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\ul\ulc0\loch\f6\loch
+empate}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\ul\ulc0\loch\f6\loch
+en}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\ul\ulc0\loch\f6\loch
+la}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\ul\ulc0\loch\f6\loch
+menor}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\ul\ulc0\loch\f6\loch
+nota}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+if}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+notaMenor}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+==}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+notas}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+]) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+out}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.println( }{\rtlch\dbch\af10\hich\af6 \ltrch\cf21\fs20\loch\f6\loch
+"la menor nota es de "}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ + }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+datosAlumnos}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+] + }{\rtlch\dbch\af10\hich\af6 \ltrch\cf21\fs20\loch\f6\loch
+"con un "}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ + }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+notaMenor}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+);\tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \}}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \}}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\ul\ulc0\loch\f6\loch
+empate}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\fs20\loch\f6\loch
+\tab    }{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+static}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+void}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ main(String[] }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+args}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6
+  }{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ejeArray16_1 }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+eje}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+= }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+new}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ ejeArray16_1();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+eje}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.Guardar();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+eje}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.empate();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6
+  }{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//main}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//ejeArray16}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1{\loch
+17. }{\rtlch\dbch\af7\afs28 \ltrch\cf1\fs28\loch
+Escribir un programa que invierta el orden de los caracteres de un array de 10 elementos de tipo entero introducidos por el usuario. No se podr\u225\'e1 utilizar otro array auxiliar.}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+package}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ vectores;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+import}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ java.util.*;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+class}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ ejeArray17 \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0\rtlch\dbch\af10\hich\af6 \ltrch\fs20\loch\f6\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab Scanner }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+scanner}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+myArray}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[];}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+reverse}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \tab \tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+void}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ presentar() \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+scanner}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=}{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+new}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ Scanner(System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+in}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+);}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+myArray}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ = }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+new}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[10];\tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab   }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+for}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=0; }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+<}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+myArray}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+length}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+++) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \tab System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+out}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.println(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf21\fs20\loch\f6\loch
+"Introduce el numero "}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ + (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
++1));}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+myArray}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+]=}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+scanner}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.nextInt();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \}}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\ul\ulc0\loch\f6\loch
+presentar}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+void}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ position() \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+for}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=0; }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+<}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+myArray}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+length}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+/2;}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+++) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+reverse}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+myArray}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+];}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+myArray}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+]=}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+myArray}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+myArray}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+length}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+-1-}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+];}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+myArray}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+myArray}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+length}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+-1-}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+]=}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+reverse}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \}}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+for}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=0; }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+<}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+myArray}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+length}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+++) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+out}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.println(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+myArray}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+]);}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \}}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//position}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6
+  }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+static}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+void}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ main(String[] }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+args}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6
+      }{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ejeArray17 }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+eje}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+= }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+new}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ ejeArray17();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+eje}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.presentar();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+eje}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.position();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6
+  }{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//main}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//ejeArray17}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1{\loch
+18. }{\rtlch\dbch\af7\afs28 \ltrch\cf1\fs28\loch
+Introduce un n\u250\'famero en un vector y comprobar si es capic\u250\'faa.}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+package}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ vectores;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+import}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ java.util.*;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+class}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ ejeArray18 \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6
+    }{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+Scanner }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+scanner}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ = }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+new}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ Scanner(System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+in}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+);}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab String }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+cadena}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab String }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+numero}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[];}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+count}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=0;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+void}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ capicua () \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+out}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.println(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf21\fs20\loch\f6\loch
+"Inserta la cadena"}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+);}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+cadena}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ = }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+scanner}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.nextLine();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+numero}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+= }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+new}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ String [1];}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+for}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=0; }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+<}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+cadena}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.length()/2;}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+++) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+if}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+cadena}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.charAt(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+)==}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+cadena}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.charAt(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+cadena}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.length()-1-}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+)) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+count}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+++;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//if}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//for}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\ul\ulc0\loch\f6\loch
+capicua}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+void}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ imprimir() \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+if}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+count}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+==}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+cadena}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.length()/2) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+out}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.println(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf21\fs20\loch\f6\loch
+"es capicua"}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+);}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \}}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+else}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+out}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.println(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf21\fs20\loch\f6\loch
+"no es capicua"}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+);}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \}\tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\ul\ulc0\loch\f6\loch
+imprimir}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6
+  }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+static}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+void}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ main(String[] }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+args}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6
+     }{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ejeArray18 }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+num1}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+= }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+new}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ ejeArray18();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+num1}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.capicua();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+num1}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.imprimir();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6
+  }{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//main}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//ejeArray18}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1{\loch
+19. }{\rtlch \ltrch\cf1\loch
+Elabore  un  programa  que  cargue  un vector   con  15  nombres, \u233\'e9stos no deben estar repetidos. Si se  introduce un nombre y ya existe en el vector se debe emitir un mensaje diciendo: \u8220\'93Usted ya fue\u8221\'94. En caso de que no exista debe ser agregado a al vector. Una vez cargado el vector debe inscrito imprimirlo.}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+package}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ vectores;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+import}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ java.util.*;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+class}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ ejeArray19 \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6
+    }{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+Scanner }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+scanner}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ = }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+new}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ Scanner(System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+in}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+);}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab String }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+cadena}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//scanner.nextLine();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+counter}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=0;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab String []}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+nombres}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+boolean}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+inscri}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=}{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+false}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+void}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ name() \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+nombres}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=}{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+new}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ String[15];}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+while}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+counter}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+<15) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+inscri}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=}{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+false}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+for}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=0;}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+<}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+nombres}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+length}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+++) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab     System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+out}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.println(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf21\fs20\loch\f6\loch
+"introduce nombre "}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ + (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
++1));}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab     }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+cadena}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+scanner}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.nextLine();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab     }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+if}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+cadena}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.equalsIgnoreCase(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+nombres}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+])) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+out}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.println(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf21\fs20\loch\f6\loch
+"Usted ya fue inscrito"}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+);}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+inscri}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=}{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+true}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \}}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+else}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab     }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+nombres}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+]=}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+cadena}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;\tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \tab \}}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab     \}}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+if}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ (}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+inscri}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+==}{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+false}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+counter}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+++;}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab \}}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//while\tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//name}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+void}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ imprimir() \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+for}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+int}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+=0;}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+<}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+nombres}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+length}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+;}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+++) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \tab System.}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\i\b\loch\f6\loch
+out}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.println(}{\rtlch\dbch\af10\hich\af6 \ltrch\cf18\fs20\loch\f6\loch
+nombres}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+[}{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+i}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+]);}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab \}}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\ul\ulc0\loch\f6\loch
+imprimir}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab \tab }
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6
+  }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+public}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+static}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+void}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ main(String[] }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+args}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+) \{}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab ejeArray19 }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+nomb}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ = }{\rtlch\dbch\af10\hich\af6 \ltrch\cf17\fs20\b\loch\f6\loch
+new}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+ ejeArray19();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+nomb}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.name();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\tab }{\rtlch\dbch\af10\hich\af6 \ltrch\cf20\fs20\loch\f6\loch
+nomb}{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+.imprimir();}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6
+  }{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//main}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0{\rtlch\dbch\af10\hich\af6 \ltrch\cf1\fs20\loch\f6\loch
+\}}{\rtlch\dbch\af10\hich\af6 \ltrch\cf19\fs20\loch\f6\loch
+//ejeArray19}
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\li0\ri0\lin0\rin0\fi0\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par \pard\plain \s0\dbch\af8\langfe1081\dbch\af8\afs24\alang1081\ql\nowidctlpar\hyphpar0\ltrpar\cf0\loch\f3\fs24\lang3082\kerning1\loch
+
+\par }

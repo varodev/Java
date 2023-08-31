@@ -1,0 +1,219 @@
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background-color: white;
+        color: grey;
+    }
+    /*header {
+    background-color: white;
+    display: flex;
+}*/
+    
+    header div div {
+        justify-content: right;
+        text-align: right;
+        padding: 10px;
+    }
+    
+    header div div a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bolder;
+        color: black;
+    }
+    
+    header {
+        background-color: white;
+        display: flex;
+    }
+    
+    nav {
+        background-color: grey;
+    }
+    
+    nav a {
+        text-decoration: none;
+        display: block;
+    }
+    
+    header nav a {
+        display: block;
+        background-color: grey;
+        color: white;
+        padding: 10px;
+        border-bottom: 1px solid black;
+        text-transform: uppercase;
+    }
+    
+    header nav a:hover {
+        color: black;
+        background-color: white;
+    }
+    
+    img {
+        max-width: 80%;
+    }
+    
+    footer ul {
+        list-style: none;
+        display: inline;
+        padding: 20px;
+        padding: 0px 25px 25px;
+    }
+    
+    footer ul li {
+        margin-top: 10px;
+    }
+    
+    footer ul li a {
+        color: rgb(11, 1, 12);
+        text-decoration: none;
+        padding: 30px;
+        text-transform: uppercase;
+        font-family: cursive;
+        cursor: pointer;
+    }
+    
+    .aviso {
+        color: red;
+        text-align: center;
+    }
+    
+    .textDet {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: grey;
+        text-align: center;
+    }
+    
+    .espacio {
+        margin: 5px;
+        padding: 10px;
+    }
+    
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2px;
+    }
+    
+    .a_letra {
+        text-transform: uppercase;
+        color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    .a_letra:hover {
+        color: rgb(105, 98, 98);
+    }
+    
+    .centrar {
+        align-items: center;
+        padding: 2px;
+    }
+    
+    .textCentrado {
+        text-align: center;
+        margin: 20px;
+        padding: 20px;
+        justify-content: center;
+        background-color: gray;
+    }
+    
+    .centradoPhp {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .col-3,
+    .col-4,
+    .col-6,
+    .col-12 {
+        width: 100%;
+        padding: 2%;
+    }
+    
+    .elementos {
+        width: 100%;
+    }
+    
+    .elementos1 {
+        width: 100%;
+        padding: 2%;
+    }
+    
+    .result_img {
+        width: 100%;
+        padding: 2%;
+    }
+    
+    .section {
+        padding: 2px;
+    }
+    
+    @media (min-width: 576px) {
+        header div {
+            text-align: center;
+        }
+        .elementos {
+            width: 50%;
+        }
+        .elementos1 {
+            width: 50%;
+        }
+        .result_img {
+            width: 100%;
+            padding: 2%;
+        }
+        .col-3 {
+            font-size: 80%;
+        }
+        .col-4 {
+            width: 100%;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        header div {
+            text-align: left;
+        }
+        nav a {
+            display: inline;
+            border-bottom: none;
+        }
+        .elementos {
+            width: 33.33%;
+        }
+        .elementos1 {
+            width: 33.33%;
+        }
+        @media (min-width: 992px) {
+            header div {
+                text-align: left;
+            }
+            .col-4footer {
+                width: 100%;
+            }
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        header div {
+            text-align: left;
+        }
+        .col-4 {
+            width: 33.33%;
+        }
+        .col-4footer {
+            width: 33.33%;
+        }
+    }
+    /*si ponemos el mismo ide a dos prendas en el db1.jason, nos sacara en detalle esas dos prendras, por lo que podemos en el futuro usar el buscador para crear una ide que sea como una categoria y dentro meter productos * /

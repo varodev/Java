@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+    	<!-- 1. Crear los ficheros de configuración para Hibernate con los datos:
+				a. Connexión a 127.0.0.1, puerto 3306
+				b. Username: ilerna
+				c. Password: Ilerna_1234
+				d. Base de datos: m06 -->
+        <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <property name="hibernate.hbm2ddl.auto">create</property>
+        <property name="connection.url">jdbc:mysql://127.0.0.1:3306/m06</property>
+        <property name="connection.username">ilerna</property>
+        <property name="connection.password">Ilerna_1234</property>
+        
+        <!-- mapeo objetos alumno.hbm.xml, moludo.hbm.xml y profesor.hbm.xml -->
+        <mapping resource="alumno.hbm.xml"/>
+        <mapping resource="modulo.hbm.xml"/>
+        <mapping resource="profesor.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>

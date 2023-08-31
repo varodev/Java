@@ -1,0 +1,11 @@
+mi variable--> no por el espacio
+num_de_cte --> si
+___programa --> si
+$alguna__>si
+3tema-->si
+cierto?-->interrogación no admitido
+numerodeCliente-->si
+jose~--> no permitido
+año> no, por la Ñ
+PI..>si
+int_> no, palabra reservada

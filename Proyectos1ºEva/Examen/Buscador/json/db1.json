@@ -1,0 +1,154 @@
+{
+    "datos": [{
+            "ide": 1,
+            "articulo": "chaqueta cuadros mujer",
+            "pvp": 75,
+            "ruta": "pics/chaqueta01.jpg",
+            "descripcion": "Tallas disponibles: 36 /38 /40 /42"
+        },
+
+
+        {
+            "ide": 2,
+            "articulo": "chaqueta corta marrón",
+            "pvp": 190,
+            "ruta": "pics/chaqueta02.jpg",
+            "descripcion": "Tallas disponibles: 36 /38 /40 /42"
+
+        },
+
+        {
+            "ide": 3,
+            "articulo": "chaqueta amarilla mujer",
+            "pvp": 90,
+            "ruta": "pics/chaqueta03.jpg",
+            "descripcion": "Tallas disponibles: 36 /38 /40 /42"
+        },
+
+        {
+            "ide": 4,
+            "articulo": "chaqueta cuero hombre",
+            "pvp": 220,
+            "ruta": "pics/chaqueta04.jpg",
+            "descripcion": "Tallas disponibles: 36 /38 /40 /42"
+        },
+
+        {
+            "ide": 5,
+            "articulo": "pantalon blanco mujer",
+            "pvp": 89,
+            "ruta": "pics/pantalon01.jpg",
+            "descripcion": "Tallas disponibles: 36 /38 /40 /42"
+        },
+        {
+            "ide": 6,
+            "articulo": "pantalon oscuro mujer",
+            "pvp": 65,
+            "ruta": "pics/pantalon02.jpg",
+            "descripcion": "Tallas disponibles: 36 /38 /40 /42"
+        },
+        {
+            "ide": 7,
+            "articulo": "pantalon vaquero mujer",
+            "pvp": 90,
+            "ruta": "pics/pantalon03.jpg",
+            "descripcion": "Tallas disponibles: 36 /38 /40 /42"
+        },
+        {
+            "ide": 8,
+            "articulo": "pantalon alto rosa",
+            "pvp": 30,
+            "ruta": "pics/pantalon04.jpg",
+            "descripcion": "Tallas disponibles: 36 /38 /40 /42"
+        },
+
+        {
+            "ide": 9,
+            "articulo": "vestido rojo estampado",
+            "pvp": 40,
+            "ruta": "pics/vestido01.jpg",
+            "descripcion": "Tallas disponibles: 36 /38 /40 /42"
+        },
+
+        {
+            "ide": 10,
+            "articulo": "vestido blanco",
+            "pvp": 55,
+            "ruta": "pics/vestido02.jpg",
+            "descripcion": "Tallas disponibles: 36 /38 /40 /42"
+        },
+
+
+        {
+            "ide": 11,
+            "articulo": "vestido rosa lunares",
+            "pvp": 25,
+            "ruta": "pics/vestido03.jpg",
+            "descripcion": "Tallas disponibles: 36 /38 /40 /42"
+        },
+
+        {
+            "ide": 12,
+            "articulo": "vestido verano cuadros",
+            "pvp": 19,
+            "ruta": "pics/vestido04.jpg",
+            "descripcion": "Tallas disponibles: 36 /38 /40 /42"
+
+        },
+
+        {
+            "ide": 13,
+            "articulo": "vestido saten crema",
+            "pvp": 53,
+            "ruta": "pics/vestido05.jpg",
+            "descripcion": "Tallas disponibles: 36 /38 /40 /42"
+
+        },
+
+
+        {
+            "ide": 14,
+            "articulo": "vestido turquesa lino",
+            "pvp": 25,
+            "ruta": "pics/vestido06.jpg",
+            "descripcion": "Tallas disponibles: 36 /38 /40 /42"
+
+        },
+
+        {
+            "ide": 15,
+            "articulo": "pantalon vaquero clásico",
+            "pvp": 35,
+            "ruta": "pics/pantalon05.jpg",
+            "descripcion": "Tallas disponibles: 36 /38 /40 /42"
+
+        },
+
+        {
+            "ide": 16,
+            "articulo": "pantalones estilo pitillo",
+            "pvp": 49,
+            "ruta": "pics/pantalon06.jpg",
+            "descripcion": "Tallas disponibles: 36 /38 /40 /42"
+
+        },
+
+        {
+            "ide": 17,
+            "articulo": "chaqueta bomber amarilla",
+            "pvp": 60,
+            "ruta": "pics/chaqueta05.jpg",
+            "descripcion": "Tallas disponibles: 36 /38 /40 /42"
+
+        },
+
+        {
+            "ide": 18,
+            "articulo": "chaqueta vaquera chico",
+            "pvp": 60,
+            "ruta": "pics/chaqueta06.jpg",
+            "descripcion": "Tallas disponibles: 36 /38 /40 /42"
+
+        }
+    ]
+}

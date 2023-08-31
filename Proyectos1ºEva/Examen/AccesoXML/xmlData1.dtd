@@ -1,0 +1,14 @@
+<!ELEMENT hoteles (hotel*)>
+<!ELEMENT hotel (nombre, categoria, pvp)>
+<!ATTLIST hotel id CDATA #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT categoria (#PCDATA)>
+<!ELEMENT pvp (#PCDATA)>
+
+
+
+
+
+
+
+

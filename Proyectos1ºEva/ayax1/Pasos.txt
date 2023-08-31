@@ -1,0 +1,16 @@
+1. DESCARGAR XAMPP 
+(hay que aceptar cuando lo pida tanto públicas como privadas)
+
+2. ACTIVAR APACHE ---> start. (Tiene que quedarse en verde)
+3.EN EL EQUIPO, IR A UNIDAD C --- XAMPP --- HDOCS --- crear carpeta con nombre "sitio1" --- dentro de ésta creamos la carpeta "ayax1" 
+4. ESTA CARPETA LA ABRIMOS EN EL VISUAL BASIC
+4.1 Dentro del visual abrimos 3 ficheros y cumplimentamos 
+* index.html
+* motor.js
+*fichero1.html
+
+5. LUEGO PARA INICIAR LO QUE CREEMOS EN EL VIRTUAL PONDREMOS LOCALHOST y deberia verse.
+
+6. De no verse asi abrimo el archivo directamente con el chromo.
+
+6. (clase grabada 28/09/2021, min 50 instalacion del XAMPP)

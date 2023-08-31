@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Er_xi/AndroidStudioProjects/11.retrofit/app/src/main/res/layout/activity_main.xml" value="0.39263803680981596" />
+        <entry key="..\:/Users/Er_xi/AndroidStudioProjects/11.retrofit/app/src/main/res/layout/activity_species_details.xml" value="0.536" />
+        <entry key="..\:/Users/Er_xi/AndroidStudioProjects/11.retrofit/app/src/main/res/layout/row_species_item.xml" value="0.6" />
+        <entry key="..\:/Users/juan/projects-win/PMDM/11.retrofit/app/src/main/res/layout/activity_main.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/juan/projects-win/PMDM/11.retrofit/app/src/main/res/layout/activity_species_details.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/juan/projects-win/PMDM/11.retrofit/app/src/main/res/layout/row_pokemon_item.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

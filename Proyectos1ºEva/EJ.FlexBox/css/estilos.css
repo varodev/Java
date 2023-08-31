@@ -1,0 +1,246 @@
+*{
+    margin :0; 
+    padding: 0; 
+    box-sizing: border-box;
+    /*bording y padding no suma*/
+    /*margin a 0 y padding a 0 es para que no haya bordes en la pagina,
+    es lo que se conoce como programar "a hueso"
+    Poner el asterisco es hacer referencia a toda la página*/
+}
+
+/*.contenedor {  Lo que se aplica al contenedor
+    display: flex;
+    width: 100%;
+    padding: 1%; separacion del 1 % tanto en el eje vertical como horizontal
+    background-color: #C0C0C0;
+}*/
+
+.elementos{ 
+    width: 10%;
+    margin: 1%;
+    padding: 1%;
+    background-color: #000;
+    color: #fff;
+}
+
+/* A CONTINUACION USO DE FLEX BOX . TIPOS :
+1 .flex-direction : Permite indicar la direccion y el orden de los elementos dentro del contenedor:
+Opciones excluyentes entre si dentro de las llaves : ejemplo v1={hola|adios|chao};
+Para que se completamente opcional seria : v1=[hola|adios|]
+- flex direction : row -- coloca los elementos en columnas
+- flex direction : colum reverse : los elementos se ordenan de abajo a arriba
+EJEMPLO
+
+.contenedor{
+    display: flex;
+    flex-direction:;
+    width: 100%;
+    padding: 1%;
+    background-color: #C0C0C0;
+}
+*/
+
+/*2. flex-wrap=Envolver :Sirve para controlar el desbordamiento, permite indicar como se van a distribuir los elementos
+dentro del contenedor. Los elementos se van acomodando dentro de la misma filo o columna (eje principal)
+mientras quepan y cuando se cope tod el espacio pasaran a ocupar la sigueinte fila/columna.
+
+ - Flex-wrap : nowrap : valor por defecto.Los elementos se mantiene siempre dentro de la misma fila o columna,
+    aunque aumente su tamaño hasta cierto limite. Si el index.html dentro del div que tiene la clase contenedor, 
+    añadimos nuevos elementos, se mantendran dentro del eje principal, dentro de cierto limite.
+- Flex - wrap : wrap-reverse : los elementos se van acomodando dentro de la misma fila columna (eje principal)
+mientras quepan y cuando se cope todo el espacio pasaran a ocupar la siguiente fila columna , pero de abajo a a 
+arriba 
+EJEMPLO:    
+ 
+.contenedor{
+    display: flex;
+    flex-wrap: nowrap; 
+    width: 100%;
+    padding: 1%;
+    background-color: #C0C0C0;
+}*/
+
+/*3. flex-flow : 
+
+.contenedor{
+    display: flex;
+    flex-flow: row|row-reverse|columnn|columnn-reverse|nowrap|wrap|wrap-reverse|row nowrap|columna wrap
+    |column - reverse wrap-reverse;
+    https://developer.mozilla.org/es/docs/Web/CSS/flex-flow
+    width: 100%;
+    padding: 1%;
+    background-color: #C0C0C0;
+}*/
+
+/*4 .justify-conten : Permite indicar como se van a posicionar los elementos entre si, trabajando con el
+eje horizontal (izquierda a derecha)
+Nota : justify content trabaja con el eje horizontal (izq - derec)
+align- items : trabaja en el eje vertical, (arriba - abajo)
+
+Tiene las opciones : 
+-flex start : que se situe en el inicio
+-flex end: se situa desd el final principal (main - end)
+-flex center : situan elementos al cnetro
+-flex space-between : mantiene el mismo espacio entre los elementos a excepcion de los elementos que esten mas
+a los extremos de la pagina, se mantienen equidistantes entre si. Situa los elementos separandolos entre ellos
+con el mismo espacio, sirviendose del espacio disponible
+-spacio- around : En este caso los elementos si tiene espacio entre ellos. Situa los elementos separandolos a
+ambos lados con el mismo espacio cada uno, siriviendose de todo el espacio disponible.
+
+
+*/
+
+
+
+/*5 . align-items : Permite indicar como se van a posicionar los elementos entre si, trabajando con el
+eje vertical (arriba-abajo)
+Nota : justify content : trabaja con el eje horizontal (izq-derec)
+align items : advertencia : para apreciar su comportamiento debemos asignar una altura al div con la que clase
+contenedro , por ejemplo del 25% de la pantalla . El v significa vertical y h altura, de height, no se puede poner porcentajes
+
+.contenedor{
+    display: flex;
+    align-items: flex-start; 
+    width: 100%;
+    height: 25vh;
+    padding: 1%;
+    background-color: #C0C0C0;
+}
+
+TIPOS
+
+- align-items-start : valor por defecto, situa los elmentosn desde la parte superior (main-start)
+- align-items-end : situa los elementos desde la parte inferior (main -end)
+- align-items-center : situa los elementos en el centro del eje horizontal.
+- align-items-strecth : extiende los elementos para ocupar toda la altura del contenedor.
+- align-items- baseline : situa los elementos desde la parte superior como flex start pero tomando como
+referencia la base del contenio del primer elmento, para alinar el resto horizontalmente a partir de este. 
+
+*/
+
+
+/*6. align-content : Similar a algn-items , permite indicar como se van a posicionar los elementos entre si, 
+trabajando con el vertical (arriba-abajo)
+align-content : alinea el contenido
+align-items: alinea los elementos
+Para apreciar este comportamiento...
+
+
+.contenedor{
+    display: flex;
+    flex-wrap : wrap;
+    align-content: flex-start; IR PROBANDO EN LAS OPCIONES LOS CAMBIOS QUE SE PRODUCEN. 
+    width: 100%;
+    height: 25vh;
+    padding: 1%;
+    background-color: #C0C0C0;
+}
+
+-align-content.center
+-align-content-space between
+-align-content-start
+-align-content-strecht
+
+PROPIEDADES DE FLEX ITEMS (ELEMENTOS)
+-Ante de explicar las propiedades de flex items (elementos) establacemos los valores de css.
+1. order: 
+Permite ordenar los elementos dentro del contenedor. Pueden existir posiciones de orden repetidas.
+Por defecto todos los elementos tiene el valor 0.
+Los que tienen 0 iran en primer lugar por orden de establecimiento en html
+Los que tienen 1 iran a continuación de los que tiene 0.
+Los que tienen 2 iran a continuacion de los que tiene 1.
+Y asi sucesivamente.
+
+EJEMPLO:
+
+.elementos:nth-child(1){
+    order:1;
+}
+
+.elementos:nth-child(2){
+    order:2;
+}
+
+.elementos:nth-child(3){
+    order:3;
+}
+
+.elementos:nth-child(4){
+    order:1;
+}
+
+ORDEN SALIDA : 5,6 1, 4, 2 3 --> Por lo que al no tener order los numeros 5 y 6 se ponen
+primero, despues se organizan los que tienen orden , por ello despues va el 1 , despues el 4
+que este en order 1 y depues ya el 2 y 3 que corresponde a los order establecidos.
+
+
+2. flex-grow : (crecer)
+    Permite indicar el valor de crecimiento de los elementos dentro del contenedor.
+    Por defecto todos los elementos tienen el valor 0, lo que supone que mantendran su tamaño,
+    independientemente de que quede espacio libre en el contenedor.
+    Si asignamos 1 a flex-grow , el espacio disponible lo ocupara ese elemento.
+    Y si varios elementos comparte 1 se repartiran a partes iguales el espacio disponible.
+    Si a dos elementos les damos el valor 1 y a otro el valor 2, los de valor 1 se repartiran una parte y el valor 2 se 
+    quedara con dos partes. Y asi sucesivamente con 3,4,5...
+    Lo que hace grow es redimensionar los espacio existentes, no añade mas espacio
+
+    EJEMPLO :
+
+.elementos:nth-child(1){
+    flex-grow:1;
+}
+
+.elementos:nth-child(2){
+    flex-grow:1;
+}
+
+.elementos:nth-child(3){
+    flex-grow:2;
+}
+
+3. flex-shrink :
+
+Permite indicar que el elemento se reducira cuando cambie a menos el tamaño de la pantalla.
+Tiene como valor por defecto 1.
+Si flex - shrink valor 0 el elemento 
+
+Nota : Para que este flex funcion los elementos para width deberan tener 
+
+
+EJEMPLO:
+
+.elementos {
+    width:400px;
+    ...
+}
+
+.elementos:nth-child(1){
+    flex-shrink:1;
+}
+
+.elementos:nth-child(2){
+    flex-shrink:1;
+}
+
+.elementos:nth-child(3){
+    flex-shrink:0; ---> no va a cambiar el tamaño.
+}
+
+
+4. flex- basis:
+5. flex
+*/
+
+
+
+
+/*EJEMPLO DE PSUDOCLASE:
+En estilo css vamos a utilizar la psudo clase nth-child para aludir mediante posicion numerica a un determiado
+elemento dentro de una misma clase.
+Por ejemplo, si queremos aludir al segundo elemento de la clase "elementos" indicaremos :
+
+.elementos:nth-hild(2){}  --->aqui estamos indicando la posicion en base 1, no en 0
+lo que pongamos entre llaves eludira exclusivamente al elemento 2 que se indica en este caso*/ 
+
+
+

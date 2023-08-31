@@ -1,0 +1,17 @@
+public class Seis{
+   int 6
+	
+	
+	
+	
+	
+	
+	
+	}
+
+
+
+
+
+
+}
